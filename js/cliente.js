@@ -7,10 +7,10 @@ const CLIENTE = {
   /* =====================================================
      🏢 NEGOCIO
   ===================================================== */
-  NOMBRE: "",
+  NOMBRE: "DISFRACES MAYSA",
   CATALOGO_ID: "disfracesmaysa",
   NOMBRE_CORTO: "MAYSA",
-  DESCRIPCION: "Alquiler y Venta de Disfraces",
+  DESCRIPCION: "Alquiler y Venta de Disfraces para toda Ocasión",
   URL_WEB: "https://disfracesmaysa.pages.dev/",
   LOGO: "assets/logo.png",
 
