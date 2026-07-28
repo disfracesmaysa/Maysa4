@@ -1,14 +1,14 @@
 {
   "name": "DISFRACES MAYSA",
   "short_name": "MAYSA",
-  "description": "Alquiler y Venta de Disfraces",
+  "description": "Alquiler y Venta de Disfraces para toda Ocasión",
   "lang": "es",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#E99AAF",
-  "theme_color": "#E99AAF",
+  "background_color": "#583DB3",
+  "theme_color": "#583DB3",
   "categories": [
     "shopping",
     "business"
