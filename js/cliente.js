@@ -70,7 +70,7 @@ const CLIENTE = {
   /* =====================================================
      📊 GOOGLE SHEETS
   ===================================================== */
-  GOOGLE_SHEET_ID: "1TPtVtx8W_FnHeVCHneoCjSqOqGjFjVaC9F2zab9Y77g",
+  GOOGLE_SHEET_ID: "1UJuXSiyY1d4GudxypoI49fHgtramM36PoTDQRVsTsos",
 
   /* =====================================================
      🎨 COLORES
