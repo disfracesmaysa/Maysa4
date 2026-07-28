@@ -1,7 +1,7 @@
 {
-  "name": "SAGC PLATFORM",
-  "short_name": "SAGC",
-  "description": "Catálogos Digitales, Sistemas de Gestión y Soluciones Empresariales",
+  "name": "DISFRACES MAYSA",
+  "short_name": "MAYSA",
+  "description": "Alquiler y Venta de Disfraces",
   "lang": "es",
   "start_url": "./index.html",
   "scope": "./",
