@@ -7926,3 +7926,22 @@ body.cart-open .sagc-notification-button{display:none !important;}
     display:none !important;
   }
 }
+
+/* OCULTAR LOGO LATERAL DEL ENCABEZADO */
+#storeLogo{
+  display:none !important;
+}
+
+/* Ajustar encabezado en computadora */
+@media (min-width:601px){
+  .topbar{
+    grid-template-columns:0 minmax(0,1fr) auto !important;
+  }
+}
+
+/* Ajustar encabezado en celular */
+@media (max-width:600px){
+  .topbar{
+    grid-template-columns:0 minmax(0,1fr) 82px !important;
+  }
+}
