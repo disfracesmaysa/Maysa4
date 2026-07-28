@@ -149,7 +149,7 @@ SEO: {
   DESCRIPCION: "Alquiler y venta de disfraces para niños y adultos. Encuentra opciones para fiestas, colegios, eventos, Halloween y toda ocasión.",
   PALABRAS_CLAVE: "Disfraces Maysa, alquiler de disfraces, venta de disfraces, disfraces para niños, disfraces para adultos, disfraces infantiles, disfraces para fiestas, disfraces escolares, disfraces para eventos, disfraces de personajes, disfraces de superhéroes, disfraces de princesas, disfraces para Halloween, disfraces temáticos, accesorios para disfraces",
   GOOGLE_SITE_VERIFICATION: "",
-  TIPO_NEGOCIO: "ClothingStore",
+  TIPO_NEGOCIO: "Store",
   IDIOMA: "es-PE"
 },
   /* =====================================================
