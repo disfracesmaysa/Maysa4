@@ -39,7 +39,7 @@ const CLIENTE = {
   // la imagen se limita automáticamente dentro de él.
   // Pon 0 para que esa medida se ajuste automáticamente.
   LOGO_NOMBRE_ANCHO_PC: 220,
-  LOGO_NOMBRE_ALTO_PC: 180,
+  LOGO_NOMBRE_ALTO_PC: 130,
   LOGO_NOMBRE_ANCHO_CELULAR: 190,
   LOGO_NOMBRE_ALTO_CELULAR: 100,
 
@@ -79,12 +79,12 @@ COLOR_PRINCIPAL: "#EE146C",
 COLOR_PRINCIPAL_OSCURO: "#59218D",
 COLOR_SECUNDARIO: "#25B6A1",
 COLOR_SUAVE: "#FFF2F7",
-COLOR_HEADER: "#a266eb",
+COLOR_HEADER: "#e49eff",
 COLOR_PRECIO: "#BF1B75",
 COLOR_FONDO_PAGINA: "#FFFAFC",
 COLOR_CARRITO: "#a266eb",
 COLOR_BOTON_COMPRAR: "#EE146C",
-COLOR_INSTALAR: "#a266eb",
+COLOR_INSTALAR: "#e49eff",
   /* =====================================================
      📦 BOTÓN ESPECIAL REUTILIZABLE
      En CONFIG usa BOTON_ESPECIAL: IMPORTACION | MAS_VENDIDO |
