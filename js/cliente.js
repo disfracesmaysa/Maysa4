@@ -7,7 +7,7 @@ const CLIENTE = {
   /* =====================================================
      🏢 NEGOCIO
   ===================================================== */
-  NOMBRE: "DISFRACES MAYSA",
+  NOMBRE: "",
   CATALOGO_ID: "disfracesmaysa",
   NOMBRE_CORTO: "MAYSA",
   DESCRIPCION: "Alquiler y Venta de Disfraces",
@@ -18,7 +18,7 @@ const CLIENTE = {
      🖼️ TAMAÑOS DEL ENCABEZADO
      Cambia únicamente los números. El diseño permanece igual.
   ===================================================== */
-  TAMANO_LOGO_PC: 42,
+  TAMANO_LOGO_PC: 60,
   TAMANO_LOGO_CELULAR: 30,
   TAMANO_NOMBRE_PC: 38,
   TAMANO_NOMBRE_CELULAR: 22,
