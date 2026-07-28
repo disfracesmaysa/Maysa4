@@ -10,7 +10,7 @@
 const WhatsAppService = (() => {
 
   const WORKER_URL =
-    "https://rd.rdjaamimportexpress.workers.dev/";
+    "https://dm.disfracesmaysa.workers.dev/";
 
   function init(){
     document.addEventListener("click", e => {
