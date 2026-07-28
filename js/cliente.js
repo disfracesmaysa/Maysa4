@@ -145,11 +145,11 @@ COLOR_INSTALAR: "#E99AAF",
   ===================================================== */
 SEO: {
   INDEXAR_EN_GOOGLE: true,
-  TITULO: "SAGC PLATFORM | Catálogos Digitales, Sistemas de Gestión y Soluciones Empresariales",
-  DESCRIPCION: "Crea catálogos digitales profesionales, sistemas administrativos, inventario, pedidos por WhatsApp y plataformas web rápidas, seguras y optimizadas para cualquier negocio. Desarrollamos soluciones personalizadas para impulsar tus ventas.",
-  PALABRAS_CLAVE:"SAGC PLATFORM, catálogo digital, catálogo virtual, sistema de gestión, sistema administrativo, software para negocios, catálogo por WhatsApp, catálogo PWA, tienda virtual, inventario, control de stock, pedidos online, Google Sheets, Apps Script, Firebase, Cloudflare, automatización de negocios, plataforma empresarial, desarrollo web, sistema de ventas, catálogo responsive, catálogo para tiendas, catálogo para distribuidores, catálogo para mayoristas, software empresarial, transformación digital",
-  GOOGLE_SITE_VERIFICATION:"",
-  TIPO_NEGOCIO: "SoftwareApplication",
+  TITULO: "Disfraces Maysa | Alquiler y Venta de Disfraces",
+  DESCRIPCION: "Alquiler y venta de disfraces para niños y adultos. Encuentra opciones para fiestas, colegios, eventos, Halloween y toda ocasión.",
+  PALABRAS_CLAVE: "Disfraces Maysa, alquiler de disfraces, venta de disfraces, disfraces para niños, disfraces para adultos, disfraces infantiles, disfraces para fiestas, disfraces escolares, disfraces para eventos, disfraces de personajes, disfraces de superhéroes, disfraces de princesas, disfraces para Halloween, disfraces temáticos, accesorios para disfraces",
+  GOOGLE_SITE_VERIFICATION: "",
+  TIPO_NEGOCIO: "ClothingStore",
   IDIOMA: "es-PE"
 },
   /* =====================================================
