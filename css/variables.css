@@ -1,0 +1,143 @@
+:root{
+  /* =========================
+     COLORES PRINCIPALES
+     Cambia estos colores para adaptar la plantilla a otro cliente
+  ========================= */
+
+  --primary:#D48AA2;          /* Color principal (precio, botones, ofertas, categorías activas, etc.) */
+  --primary-dark:#C87892;     /* Versión oscura del color principal (hover de botones) */
+  --primary-soft:#FDF5F8;     /* Fondo suave del color principal (cajas, etiquetas o fondos claros) */
+
+  --secondary:#111827;        /* Color secundario para elementos oscuros */
+  --accent:#ffb703;           /* Color de acento para destacar pequeños detalles */
+
+  --success:#C8A24A;          /* Color de éxito (mensajes positivos o confirmaciones) */
+  --success-dark:#9A7A2E;     /* Hover o versión oscura del color de éxito */
+
+  --danger:#ef4444;           /* Errores, eliminar, alertas */
+  --warning:#f59e0b;          /* Advertencias */
+
+  /* =========================
+     FONDOS
+  ========================= */
+
+  --bg-page:#FFF9FB;          /* Fondo general de toda la página */
+  --bg-card:#ffffff;          /* Fondo de las tarjetas de productos */
+  --bg-header:#5B6472;        /* Fondo del encabezado (Header) */
+  --bg-footer:var(--bg-header);        /* Fondo del pie de página (Footer) */
+  --bg-modal:#ffffff;         /* Fondo de los modales */
+  --bg-input:#ffffff;         /* Fondo de cajas de texto e inputs */
+  --bg-muted:#f8fafc;         /* Fondo gris muy claro para zonas secundarias */
+
+
+  /* =========================
+     TEXTOS
+  ========================= */
+
+  --text-title:#111111;       /* Nombre del producto */
+  --text-main:#1f2937;        /* Texto principal */
+  --text-muted:#6B7280;       /* Código, marca y texto secundario */
+  --text-light:#ffffff;       /* Texto sobre fondos oscuros */
+  --text-footer:#ffffff;      /* Texto del Footer */
+
+  /* =========================
+     PRECIOS
+  ========================= */
+
+ --price:#D48AA2;            /* Precio actual */
+  --old-price:#D65A5A;        /* Precio anterior tachado */
+  --discount:var(--primary);  /* Badge de descuento */
+  --wholesale:var(--price); /* Precio por mayor */
+
+/* =========================
+   MAYOREO EN TARJETA
+========================= */
+
+ --wh-bg:#ffffff;            /* Fondo del cuadro de mayoreo */
+  --wh-border:#e5e7eb;        /* Borde del cuadro */
+  --wh-title:#374151;         /* Título "Precio por mayor" */
+  --wh-icon:#6b7280;          /* Color del icono */
+  --wh-tier:#111827;          /* Texto de cada rango */
+  --wh-price:var(--price);  /* Precio por mayor */
+  --wh-radius:10px;           /* Bordes redondeados */
+  /* =========================
+     BOTONES
+  ========================= */
+
+  --btn-primary:var(--bg-header);           /* Botón principal */
+  --btn-primary-hover:#4B5563;/* Hover botón principal */
+
+  --btn-detail:#111111;                   /* Botón Ver detalle */
+  --btn-video:#111111;                    /* Botón Ver video */
+  --btn-share:#ffffff;                    /* Botón Compartir */
+  --btn-whatsapp:#16a34a;                 /* Botón WhatsApp */
+  --btn-whatsapp-hover:#0f8a39;           /* Hover WhatsApp */
+
+  --btn-text-light:#ffffff;               /* Texto blanco en botones */
+  --btn-text-dark:#111827;                /* Texto oscuro en botones */
+
+  /* =========================
+     CATEGORÍAS
+  ========================= */
+
+   --category-bg:#ffffff;                  /* Fondo de categoría */
+  --category-text:#111827;                /* Texto de categoría */
+  --category-active:var(--primary);       /* Categoría seleccionada */
+  --category-active-text:#ffffff;         /* Texto categoría activa */
+
+  /* =========================
+     TARJETAS
+  ========================= */
+
+   --card-radius:18px;                     /* Bordes redondeados */
+  --card-border:#eeeeee;                  /* Borde */
+  --card-shadow:0 10px 30px rgba(17,24,39,.08); /* Sombra normal */
+  --card-shadow-hover:0 18px 45px rgba(17,24,39,.14); /* Sombra al pasar el mouse */
+
+  /* =========================
+     MODAL / CARRITO
+  ========================= */
+
+  --modal-shadow:0 25px 80px rgba(0,0,0,.18); /* Sombra del modal */
+  --overlay:rgba(17,24,39,.42);               /* Fondo oscuro detrás del modal */
+
+  --cart-bg:#ffffff;                          /* Fondo del carrito */
+  --cart-border:#eeeeee;                      /* Borde del carrito */
+
+  /* =========================
+     VARIANTES
+  ========================= */
+
+  --option-border:#e5e7eb;      /* Borde de cada opción */
+  --option-active:#ff2b6d;      /* Opción seleccionada */
+  --option-disabled:#eeeeee;    /* Opción sin stock */
+  --stock-bg:#eaf8ef;           /* Fondo del indicador de stock */
+  --stock-text:#087a2f;         /* Texto del stock */
+
+  /* =========================
+     FORMAS Y ESPACIADOS
+  ========================= */
+
+  --radius-xs:8px;              /* Bordes pequeños */
+  --radius-sm:12px;
+  --radius-md:16px;
+  --radius-lg:22px;
+  --radius-xl:30px;
+
+  --shadow-sm:0 4px 14px rgba(0,0,0,.08);   /* Sombra pequeña */
+  --shadow-md:0 10px 30px rgba(0,0,0,.12);  /* Sombra media */
+  --shadow-lg:0 18px 50px rgba(0,0,0,.18);  /* Sombra grande */
+
+  /* =========================
+     TIPOGRAFÍAS
+  ========================= */
+
+   --font-title:'Fredoka', sans-serif;    /* Fuente para títulos */
+  --font-main:'Poppins', sans-serif;     /* Fuente para textos */
+  /* =========================
+     TAMAÑOS
+  ========================= */
+
+  --header-height:86px;          /* Altura del Header */
+  --container-max:1280px;        /* Ancho máximo del contenido */
+}

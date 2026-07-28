@@ -1,0 +1,30 @@
+{
+  "name": "SAGC PLATFORM",
+  "short_name": "SAGC",
+  "description": "Catálogos Digitales, Sistemas de Gestión y Soluciones Empresariales",
+  "lang": "es",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#E99AAF",
+  "theme_color": "#E99AAF",
+  "categories": [
+    "shopping",
+    "business"
+  ],
+  "icons": [
+    {
+      "src": "assets/icons/logo192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/logo512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+@keyframes skeleton{
+  0%{background-position:200% 0}
+  100%{background-position:-200% 0}
+}
+
+/* =========================================================
+   ANIMACIONES OPCIONALES DESDE GOOGLE SHEETS
+   No se activa ninguna si la clave correspondiente no existe.
+========================================================= */
+@keyframes sagc-pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes sagc-glow{0%,100%{filter:brightness(1);box-shadow:0 0 0 rgba(255,255,255,0)}50%{filter:brightness(1.22);box-shadow:0 0 16px rgba(255,255,255,.5)}}
+@keyframes sagc-flash{0%,84%,100%{filter:brightness(1);opacity:1}88%{filter:brightness(1.8);opacity:.82}92%{filter:brightness(1);opacity:1}96%{filter:brightness(1.6);opacity:.88}}
+@keyframes sagc-shine{0%,72%,100%{filter:brightness(1)}82%{filter:brightness(1.45)}88%{filter:brightness(1.08)}94%{filter:brightness(1.35)}}
+@keyframes sagc-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+
+@keyframes sagc-logo-pulse{0%,100%{transform:scale(1.8)}50%{transform:scale(1.92)}}
+@keyframes sagc-logo-glow{0%,100%{transform:scale(1.8);filter:brightness(1) drop-shadow(0 0 0 rgba(255,255,255,0))}50%{transform:scale(1.8);filter:brightness(1.25) drop-shadow(0 0 8px rgba(255,255,255,.72))}}
+@keyframes sagc-logo-flash{0%,84%,100%{transform:scale(1.8);filter:brightness(1);opacity:1}88%{filter:brightness(1.9);opacity:.82}92%{filter:brightness(1);opacity:1}96%{filter:brightness(1.7);opacity:.9}}
+@keyframes sagc-logo-shine{0%,72%,100%{transform:scale(1.8);filter:brightness(1)}82%{filter:brightness(1.55)}88%{filter:brightness(1.08)}94%{filter:brightness(1.38)}}
+@keyframes sagc-logo-float{0%,100%{transform:scale(1.8) translateY(0)}50%{transform:scale(1.8) translateY(-3px)}}
+
+body.anim-logo-pulse .brand-logo{animation:sagc-logo-pulse 2.4s ease-in-out infinite}
+body.anim-logo-glow .brand-logo{animation:sagc-logo-glow 2.8s ease-in-out infinite}
+body.anim-logo-flash .brand-logo{animation:sagc-logo-flash 4.8s ease-in-out infinite}
+body.anim-logo-shine .brand-logo{animation:sagc-logo-shine 5s ease-in-out infinite}
+body.anim-logo-float .brand-logo{animation:sagc-logo-float 3s ease-in-out infinite}
+body.anim-logo-ninguna .brand-logo{animation:none!important}
+
+body.anim-carrito-pulse #openCartBtn,body.anim-whatsapp-pulse .btn-whatsapp,body.anim-whatsapp-pulse .btn-whatsapp-product,body.anim-instalar-pulse #installAppBtn,body.anim-oferta-pulse .discount-badge,body.anim-oferta-pulse .offer-badge,body.anim-favoritos-pulse .favorite-btn,body.anim-favoritos-pulse #filterFavoritesBtn,body.anim-boton-comprar-pulse .open-variants,body.anim-boton-comprar-pulse .detail-cart-btn{animation:sagc-pulse 2.2s ease-in-out infinite}
+body.anim-carrito-glow #openCartBtn,body.anim-whatsapp-glow .btn-whatsapp,body.anim-whatsapp-glow .btn-whatsapp-product,body.anim-instalar-glow #installAppBtn,body.anim-oferta-glow .discount-badge,body.anim-oferta-glow .offer-badge,body.anim-favoritos-glow .favorite-btn,body.anim-favoritos-glow #filterFavoritesBtn,body.anim-boton-comprar-glow .open-variants,body.anim-boton-comprar-glow .detail-cart-btn{animation:sagc-glow 2.8s ease-in-out infinite}
+body.anim-carrito-flash #openCartBtn,body.anim-whatsapp-flash .btn-whatsapp,body.anim-whatsapp-flash .btn-whatsapp-product,body.anim-instalar-flash #installAppBtn,body.anim-oferta-flash .discount-badge,body.anim-oferta-flash .offer-badge,body.anim-favoritos-flash .favorite-btn,body.anim-favoritos-flash #filterFavoritesBtn,body.anim-boton-comprar-flash .open-variants,body.anim-boton-comprar-flash .detail-cart-btn{animation:sagc-flash 5s ease-in-out infinite}
+body.anim-carrito-shine #openCartBtn,body.anim-whatsapp-shine .btn-whatsapp,body.anim-whatsapp-shine .btn-whatsapp-product,body.anim-instalar-shine #installAppBtn,body.anim-oferta-shine .discount-badge,body.anim-oferta-shine .offer-badge,body.anim-favoritos-shine .favorite-btn,body.anim-favoritos-shine #filterFavoritesBtn,body.anim-boton-comprar-shine .open-variants,body.anim-boton-comprar-shine .detail-cart-btn{animation:sagc-shine 5.2s ease-in-out infinite}
+body.anim-carrito-float #openCartBtn,body.anim-whatsapp-float .btn-whatsapp,body.anim-whatsapp-float .btn-whatsapp-product,body.anim-instalar-float #installAppBtn,body.anim-oferta-float .discount-badge,body.anim-oferta-float .offer-badge,body.anim-favoritos-float .favorite-btn,body.anim-favoritos-float #filterFavoritesBtn,body.anim-boton-comprar-float .open-variants,body.anim-boton-comprar-float .detail-cart-btn{animation:sagc-float 3s ease-in-out infinite}
+
+body.anim-carrito-ninguna #openCartBtn,body.anim-whatsapp-ninguna .btn-whatsapp,body.anim-whatsapp-ninguna .btn-whatsapp-product,body.anim-instalar-ninguna #installAppBtn,body.anim-oferta-ninguna .discount-badge,body.anim-oferta-ninguna .offer-badge,body.anim-favoritos-ninguna .favorite-btn,body.anim-favoritos-ninguna #filterFavoritesBtn,body.anim-boton-comprar-ninguna .open-variants,body.anim-boton-comprar-ninguna .detail-cart-btn{animation:none!important}
+
+body.anim-anuncio-pulse #announcementBar{animation:sagc-pulse 2.4s ease-in-out infinite}
+body.anim-anuncio-glow #announcementBar{animation:sagc-glow 2.8s ease-in-out infinite}
+body.anim-anuncio-flash #announcementBar{animation:sagc-flash 5s ease-in-out infinite}
+body.anim-anuncio-shine #announcementBar{animation:sagc-shine 5.2s ease-in-out infinite}
+body.anim-anuncio-float #announcementBar{animation:sagc-float 3s ease-in-out infinite}
+
+@media(max-width:600px){.brand-logo{position:relative;left:6px}}
+
+@media(prefers-reduced-motion:reduce){
+  body[class*="anim-"] .brand-logo,body[class*="anim-"] #openCartBtn,body[class*="anim-"] .btn-whatsapp,body[class*="anim-"] .btn-whatsapp-product,body[class*="anim-"] #installAppBtn,body[class*="anim-"] .discount-badge,body[class*="anim-"] .offer-badge,body[class*="anim-"] .favorite-btn,body[class*="anim-"] #filterFavoritesBtn,body[class*="anim-"] .open-variants,body[class*="anim-"] .detail-cart-btn,body[class*="anim-"] #announcementBar{animation:none!important}
+}
+
+
+/* Anuncio profesional: efectos reales seleccionables desde ANIMACION_ANUNCIO. */
+@keyframes sagc-announcement-neon{
+  0%,100%{text-shadow:0 0 2px rgba(255,255,255,.35),0 0 7px color-mix(in srgb,var(--primary) 55%,transparent);filter:brightness(1)}
+  50%{text-shadow:0 0 4px rgba(255,255,255,.7),0 0 12px color-mix(in srgb,var(--primary) 82%,transparent),0 0 20px color-mix(in srgb,var(--primary) 45%,transparent);filter:brightness(1.12)}
+}
+@keyframes sagc-announcement-shine{
+  0%,68%{transform:translateX(-140%) skewX(-20deg)}
+  86%,100%{transform:translateX(240%) skewX(-20deg)}
+}
+body.anim-anuncio-neon #announcementBar{
+  background:color-mix(in srgb,var(--primary-dark) 82%,#111827);
+  color:#fff;
+  border-bottom-color:color-mix(in srgb,var(--primary) 72%,transparent);
+  box-shadow:inset 0 0 16px color-mix(in srgb,var(--primary) 28%,transparent),0 3px 12px rgba(0,0,0,.12);
+}
+body.anim-anuncio-neon #announcementTrack,
+body.anim-anuncio-neon .announcement-item{
+  animation:sagc-announcement-neon 2.8s ease-in-out infinite;
+}
+body.anim-anuncio-neon .announcement-item::before{color:#fff;}
+body.anim-anuncio-shine #announcementBar{position:relative;isolation:isolate;}
+body.anim-anuncio-shine #announcementBar::after{
+  content:"";
+  position:absolute;
+  inset:-20% auto -20% -25%;
+  width:18%;
+  pointer-events:none;
+  z-index:2;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.58),transparent);
+  animation:sagc-announcement-shine 5.4s ease-in-out infinite;
+}
+body.anim-anuncio-shine #announcementTrack{position:relative;z-index:1;}
+
+@media(prefers-reduced-motion:reduce){
+  body.anim-anuncio-neon #announcementTrack,
+  body.anim-anuncio-neon .announcement-item,
+  body.anim-anuncio-shine #announcementBar::after{animation:none!important;}
+}

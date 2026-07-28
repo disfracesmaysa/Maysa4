@@ -1,0 +1,1443 @@
+/* =========================================================
+   EMPRESA.CSS - PREMIUM V3
+   Tarjeta empresa con iconos SVG, colores desde :root
+   IMPORTANTE:
+   - Reemplaza TODO tu css/empresa.css con este contenido.
+   - No pegues esto en app.css.
+========================================================= */
+
+/* =============================
+   TARJETA PREVIEW EMPRESA
+============================= */
+
+.empresa-access{
+  width:100%;
+  max-width:1180px;
+  margin:30px auto 16px;
+  padding:0 18px;
+}
+
+.empresa-preview{
+  width:100%;
+  min-height:132px;
+  background:
+    radial-gradient(circle at 8% 50%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 28%),
+    linear-gradient(135deg,#fff,#fff5f9);
+  border:1px solid color-mix(in srgb, var(--primary) 34%, transparent);
+  border-radius:28px;
+  padding:22px 26px;
+  display:grid;
+  grid-template-columns:118px 1.15fr 1.35fr 270px;
+  gap:22px;
+  align-items:center;
+  box-shadow:0 18px 45px rgba(15,23,42,.08);
+}
+
+.empresa-preview-main-icon{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background:color-mix(in srgb, var(--primary) 15%, #fff);
+  color:var(--primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 26px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.empresa-preview-main-icon svg{
+  width:56px;
+  height:56px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.empresa-preview-text h3{
+  font-family:var(--font-title);
+  font-size:25px;
+  font-weight:900;
+  color:var(--text-title);
+  line-height:1.05;
+  margin:0 0 8px;
+}
+
+.empresa-preview-text p{
+  font-size:17px;
+  font-weight:900;
+  color:var(--text-main);
+  margin:0 0 8px;
+  line-height:1.25;
+}
+
+.empresa-preview-text strong{
+  color:var(--primary);
+}
+
+.empresa-preview-text span{
+  display:block;
+  color:var(--text-main);
+  font-size:15.5px;
+  line-height:1.45;
+}
+
+.empresa-preview-features{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+  border-left:1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  padding-left:22px;
+}
+
+.empresa-feature{
+  text-align:center;
+  color:var(--primary);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  transition:.22s ease;
+}
+
+.empresa-feature:hover{
+  transform:translateY(-3px);
+}
+
+.empresa-feature svg{
+  width:34px;
+  height:34px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.empresa-feature span{
+  display:block;
+  font-size:12px;
+  line-height:1.15;
+  color:var(--text-title);
+  font-weight:800;
+}
+
+.empresa-preview-btn{
+  height:58px;
+  border-radius:16px;
+    background:var(--bg-header);
+  color:#fff;
+  font-weight:900;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+box-shadow:0 12px 28px rgba(75,85,99,.28);
+  transition:.22s ease;
+  white-space:nowrap;
+  border:0;
+}
+
+.empresa-preview-btn svg{
+  width:22px;
+  height:22px;
+  stroke:currentColor;
+  fill:none;
+  stroke-width:2.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.empresa-preview-btn .empresa-arrow{
+  width:20px;
+  height:20px;
+  transition:.22s ease;
+}
+
+.empresa-preview-btn:hover{
+  transform:translateY(-2px);
+  filter:brightness(.98);
+}
+
+.empresa-preview-btn:hover .empresa-arrow{
+  transform:translateX(4px);
+}
+/* ===================================================
+   CONTENEDOR EMPRESA
+=================================================== */
+
+.empresa-view{
+  display:none;
+}
+
+.empresa-view.hidden{
+  display:none !important;
+}
+
+.empresa-view.empresa-modal-view{
+  position:fixed;
+  inset:20px;
+  z-index:99999;
+
+  display:block !important;
+
+  width:min(1100px,95vw);
+  height:min(90vh,900px);
+
+  margin:auto;
+
+  overflow-y:auto;
+
+  background:#fff;
+  border-radius:28px;
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.28);
+
+  animation:empresaOpen .25s ease;
+}
+
+.empresa-container{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.empresa-card{
+  background:#fff;
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:24px;
+  padding:24px;
+  box-shadow:0 14px 38px rgba(15,23,42,.08);
+}
+
+.empresa-hero{
+  text-align:center;
+  overflow:hidden;
+  padding:0 0 24px;
+}
+
+.empresa-banner{
+  width:100%;
+  max-height:300px;
+  object-fit:cover;
+  border-radius:24px 24px 0 0;
+  display:block;
+}
+
+.empresa-logo{
+  width:96px;
+  height:96px;
+  object-fit:contain;
+  border-radius:50%;
+  background:#fff;
+  padding:8px;
+  margin:-48px auto 12px;
+  display:block;
+  border:4px solid #fff;
+  box-shadow:0 10px 30px rgba(15,23,42,.16);
+}
+
+.empresa-title{
+  font-family:var(--font-title);
+  font-size:36px;
+  font-weight:900;
+  color:var(--text-title);
+  text-align:center;
+  margin:0;
+  line-height:1.05;
+}
+
+.empresa-slogan{
+  margin:8px 0 12px;
+  color:var(--primary);
+  font-weight:900;
+  font-size:18px;
+  text-align:center;
+}
+
+.empresa-description{
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+  color:var(--text-main);
+  line-height:1.7;
+  font-size:15.5px;
+}
+
+.empresa-section-title{
+  font-family:var(--font-title);
+  font-size:24px;
+  font-weight:900;
+  color:var(--text-title);
+  margin:0 0 16px;
+}
+
+.empresa-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:14px;
+}
+
+.empresa-item,
+.empresa-step,
+.empresa-testimonio,
+.empresa-stat{
+  background:linear-gradient(180deg,#fff,var(--bg-page));
+  border:1px solid rgba(15,23,42,.08);
+  border-radius:18px;
+  padding:17px;
+  box-shadow:0 8px 24px rgba(15,23,42,.045);
+}
+
+.empresa-item{
+  font-weight:900;
+  color:var(--text-main);
+}
+
+.empresa-step-number{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.empresa-step strong{
+  display:block;
+  font-size:15px;
+  color:var(--text-title);
+}
+
+.empresa-step p{
+  margin-top:7px;
+  color:var(--text-muted);
+  line-height:1.5;
+  font-size:14px;
+}
+
+.empresa-payment{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.empresa-payment-icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:21px;
+  box-shadow:0 6px 18px rgba(15,23,42,.08);
+}
+
+.empresa-info-list p{
+  margin-bottom:9px;
+  color:var(--text-main);
+  line-height:1.5;
+}
+
+.empresa-stars{
+  color:#f59e0b;
+  font-size:20px;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+
+.empresa-testimonio strong{
+  display:block;
+  color:var(--text-title);
+}
+
+.empresa-testimonio small{
+  display:block;
+  color:var(--text-muted);
+  margin-top:3px;
+}
+
+.empresa-testimonio p{
+  margin-top:8px;
+  color:var(--text-main);
+  line-height:1.5;
+}
+
+.empresa-faq{
+  border-bottom:1px solid rgba(15,23,42,.08);
+  padding:14px 0;
+}
+
+.empresa-faq:last-child{
+  border-bottom:0;
+}
+
+.empresa-faq-question{
+  font-weight:900;
+  color:var(--text-title);
+  cursor:pointer;
+  padding-right:34px;
+  position:relative;
+}
+
+.empresa-faq-question::after{
+  content:"+";
+  position:absolute;
+  right:0;
+  top:-2px;
+  color:var(--primary);
+  font-size:24px;
+  line-height:1;
+}
+
+.empresa-faq.active .empresa-faq-question::after{
+  content:"−";
+}
+
+.empresa-faq-answer{
+  display:none;
+  margin-top:10px;
+  color:var(--text-muted);
+  line-height:1.6;
+}
+
+.empresa-faq.active .empresa-faq-answer{
+  display:block;
+}
+
+.empresa-stat{
+  text-align:center;
+}
+
+.empresa-stat strong{
+  display:block;
+  color:var(--primary);
+  font-size:34px;
+  font-weight:900;
+  line-height:1;
+}
+
+.empresa-stat span{
+  display:block;
+  color:var(--text-muted);
+  font-weight:800;
+  margin-top:8px;
+}
+
+.empresa-socials{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.empresa-social-btn,
+.empresa-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:12px 16px;
+  border-radius:999px;
+  background:var(--bg-page);
+  color:var(--text-main);
+  text-decoration:none;
+  font-weight:900;
+  border:1px solid rgba(15,23,42,.08);
+  transition:.22s;
+}
+
+.empresa-social-btn:hover,
+.empresa-link:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+.empresa-whatsapp{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  padding:15px;
+  border-radius:16px;
+  background:#22c55e;
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.btn-volver-catalogo{
+  width:100%;
+  padding:15px;
+  border-radius:16px;
+  background:#111827;
+  color:#fff;
+  font-weight:900;
+}
+
+/* =============================
+   FOOTER DELGADO
+============================= */
+
+.footer{
+  min-height:62px !important;
+  padding:10px 22px !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:34px !important;
+  background:var(--bg-footer) !important;
+}
+
+.footer strong,
+.footer p,
+.footer #legalText{
+  display:none !important;
+}
+
+.footer .created-by{
+  display:block !important;
+  font-size:14px !important;
+  font-weight:800 !important;
+  color:#fff !important;
+  margin:0 !important;
+}
+
+.footer .social-links{
+  margin:0 !important;
+  gap:13px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.footer .social-icon{
+  width:40px !important;
+  height:40px !important;
+  min-width:40px !important;
+  min-height:40px !important;
+  background:#fff !important;
+  box-shadow:0 8px 22px rgba(0,0,0,.16) !important;
+}
+
+.footer .social-icon svg{
+  width:19px !important;
+  height:19px !important;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media(max-width:1000px){
+  .empresa-preview{
+    grid-template-columns:100px 1fr;
+  }
+
+  .empresa-preview-features{
+    grid-column:1 / -1;
+    border-left:0;
+    border-top:1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+    padding-left:0;
+    padding-top:16px;
+  }
+
+  .empresa-preview-btn{
+    grid-column:1 / -1;
+  }
+}
+
+@media(max-width:600px){
+  .empresa-access{
+    margin:22px auto 12px;
+    padding:0 12px;
+  }
+
+  .empresa-preview{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:18px;
+    border-radius:22px;
+    gap:16px;
+  }
+
+  .empresa-preview-main-icon{
+    margin:auto;
+    width:84px;
+    height:84px;
+  }
+
+  .empresa-preview-main-icon svg{
+    width:46px;
+    height:46px;
+  }
+
+  .empresa-preview-text h3{
+    font-size:22px;
+  }
+
+  .empresa-preview-text p{
+    font-size:15px;
+  }
+
+  .empresa-preview-text span{
+    font-size:14px;
+  }
+
+  .empresa-preview-features{
+    grid-template-columns:repeat(5,1fr);
+    gap:6px;
+  }
+
+  .empresa-feature svg{
+    width:25px;
+    height:25px;
+  }
+
+  .empresa-feature span{
+    font-size:10px;
+  }
+
+  .empresa-preview-btn{
+    height:52px;
+    font-size:14px;
+  }
+
+  .empresa-view{
+    margin:18px auto 30px;
+    padding:0 12px 30px;
+  }
+
+  .empresa-card{
+    padding:17px;
+    border-radius:20px;
+  }
+
+  .empresa-banner{
+    max-height:210px;
+    border-radius:20px 20px 0 0;
+  }
+
+  .empresa-logo{
+    width:84px;
+    height:84px;
+    margin:-42px auto 10px;
+  }
+
+  .empresa-title{
+    font-size:28px;
+  }
+
+  .empresa-slogan{
+    font-size:15px;
+  }
+
+  .empresa-section-title{
+    font-size:22px;
+  }
+
+  .empresa-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer{
+    min-height:auto !important;
+    padding:10px 14px 22px !important;
+    gap:10px !important;
+    flex-direction:column !important;
+  }
+
+  .footer .created-by{
+    font-size:13px !important;
+  }
+
+  .footer .social-icon{
+    width:36px !important;
+    height:36px !important;
+    min-width:36px !important;
+    min-height:36px !important;
+  }
+}
+.empresa-view.empresa-modal-view .empresa-container{
+    padding:20px;
+}
+
+@keyframes empresaOpen{
+
+    from{
+        opacity:0;
+        transform:scale(.95);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@media(max-width:700px){
+
+    .empresa-view.empresa-modal-view{
+
+        inset:8px;
+
+        width:auto;
+        height:auto;
+
+        border-radius:20px;
+
+    }
+
+}
+
+/* ====================================
+   IMAGEN MÉTODOS DE PAGO
+==================================== */
+
+.payment-image-box{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:6px 0;
+}
+
+.payment-image-box img{
+  width:58%;
+  max-width:560px;
+  min-width:380px;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  margin:0 auto;
+  border-radius:18px;
+}
+
+@media(max-width:700px){
+  .payment-image-box{
+    padding:0;
+  }
+
+  .payment-image-box img{
+    width:100%;
+    max-width:none;
+    min-width:0;
+    height:auto;
+    border-radius:14px;
+  }
+}
+
+/* ICONO WHATSAPP EN EMPRESA */
+
+.empresa-whatsapp{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.empresa-whatsapp .whatsapp-icon{
+  width:22px;
+  height:22px;
+  flex:0 0 22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+  background:#fff;
+  color:#25D366;
+}
+
+.empresa-whatsapp .whatsapp-icon svg{
+  width:14px;
+  height:14px;
+  display:block;
+  fill:currentColor;
+}
+
+/* =========================================================
+   GALERÍA DE CONFIANZA
+   - Muestra hasta 6 fotos en la página
+   - PC: 6 fotos en una sola fila
+   - Celular: 3 fotos por fila
+   - El visor permite recorrer todas las fotos
+========================================================= */
+
+.empresa-gallery-description{
+  margin:-6px 0 18px;
+  color:var(--text-muted);
+  font-size:14px;
+  line-height:1.6;
+}
+
+.empresa-gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(6, minmax(0,1fr));
+  gap:10px;
+}
+
+.empresa-gallery-item{
+  position:relative;
+  width:100%;
+  aspect-ratio:1 / 1;
+  padding:0;
+  overflow:hidden;
+  border:1px solid rgba(15,23,42,.10);
+  border-radius:14px;
+  background:#f8fafc;
+  cursor:pointer;
+  box-shadow:0 8px 22px rgba(15,23,42,.07);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+
+.empresa-gallery-item:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 30px rgba(15,23,42,.13);
+}
+
+.empresa-gallery-item img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .25s ease;
+}
+
+.empresa-gallery-item:hover img{
+  transform:scale(1.04);
+}
+
+.empresa-gallery-view-all{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  min-width:190px;
+  min-height:42px;
+  margin:16px auto 0;
+  padding:0 18px;
+  border:0;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
+  color:#fff;
+  font-family:var(--font-body);
+  font-size:12px;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow:0 10px 24px color-mix(in srgb,var(--primary) 28%,transparent);
+  transition:transform .2s ease, filter .2s ease;
+}
+
+.empresa-gallery-view-all:hover{
+  transform:translateY(-2px);
+  filter:brightness(.98);
+}
+
+.empresa-gallery-lightbox{
+  position:fixed;
+  inset:0;
+  z-index:100000;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  background:rgba(2,6,23,.88);
+  backdrop-filter:blur(5px);
+}
+
+.empresa-gallery-lightbox.show{
+  display:flex;
+}
+
+.empresa-gallery-lightbox-content{
+  width:min(920px,88vw);
+  max-height:88vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.empresa-gallery-lightbox-content img{
+  max-width:100%;
+  max-height:80vh;
+  object-fit:contain;
+  border-radius:16px;
+  background:#fff;
+  box-shadow:0 26px 70px rgba(0,0,0,.38);
+}
+
+.empresa-gallery-counter{
+  min-width:72px;
+  padding:7px 13px;
+  border-radius:999px;
+  background:rgba(255,255,255,.15);
+  color:#fff;
+  text-align:center;
+  font-size:13px;
+  font-weight:800;
+}
+
+.empresa-gallery-close,
+.empresa-gallery-nav{
+  position:absolute;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:0;
+  background:rgba(255,255,255,.95);
+  color:#111827;
+  box-shadow:0 10px 28px rgba(0,0,0,.25);
+  cursor:pointer;
+}
+
+.empresa-gallery-close{
+  top:20px;
+  right:20px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  font-size:28px;
+  line-height:1;
+}
+
+.empresa-gallery-nav{
+  top:50%;
+  transform:translateY(-50%);
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  font-size:38px;
+  line-height:1;
+}
+
+.empresa-gallery-prev{ left:22px; }
+.empresa-gallery-next{ right:22px; }
+
+@media(max-width:700px){
+  .empresa-gallery-grid{
+    grid-template-columns:repeat(3, minmax(0,1fr));
+    gap:7px;
+  }
+
+  .empresa-gallery-description{
+    font-size:12px;
+    margin-bottom:12px;
+  }
+
+  .empresa-gallery-item{
+    border-radius:10px;
+  }
+
+  .empresa-gallery-view-all{
+    min-width:170px;
+    min-height:38px;
+    margin-top:12px;
+    padding:0 14px;
+    border-radius:10px;
+    font-size:10.5px;
+  }
+
+  .empresa-gallery-lightbox{
+    padding:14px;
+  }
+
+  .empresa-gallery-lightbox-content{
+    width:94vw;
+  }
+
+  .empresa-gallery-close{
+    top:12px;
+    right:12px;
+    width:40px;
+    height:40px;
+  }
+
+  .empresa-gallery-nav{
+    width:40px;
+    height:40px;
+    font-size:31px;
+  }
+
+  .empresa-gallery-prev{ left:8px; }
+  .empresa-gallery-next{ right:8px; }
+}
+
+
+/* =========================================================
+   AJUSTES FINALES EMPRESA - VERSIÓN LIMPIA
+========================================================= */
+
+/* CONTACTO: botones compactos, iguales y en una sola fila */
+.empresa-card:last-child{
+  display:grid !important;
+  grid-template-columns:repeat(2, minmax(0,260px)) !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:12px !important;
+  text-align:center !important;
+}
+
+.empresa-card:last-child .empresa-section-title{
+  display:none !important;
+}
+
+.empresa-whatsapp,
+.btn-volver-catalogo{
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:44px !important;
+  min-height:44px !important;
+  margin:0 !important;
+  padding:0 14px !important;
+
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  gap:8px !important;
+
+  border-radius:12px !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+  line-height:1 !important;
+  text-align:center !important;
+}
+
+/* CÓMO COMPRAR: 4 tarjetas iguales en PC */
+.empresa-grid:has(.empresa-step){
+  grid-template-columns:repeat(4, minmax(0,1fr)) !important;
+  align-items:stretch;
+}
+
+.empresa-step{
+  height:100%;
+}
+
+/* ESTADÍSTICAS: 3 tarjetas en una sola fila */
+.empresa-grid:has(.empresa-stat){
+  grid-template-columns:repeat(3, minmax(0,1fr)) !important;
+}
+
+/* UBICACIÓN */
+.empresa-maps-card{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.empresa-link{
+  padding:9px 13px !important;
+  font-size:12px !important;
+  line-height:1.1 !important;
+  white-space:nowrap !important;
+}
+
+/* CELULAR */
+@media(max-width:600px){
+
+  .empresa-view.empresa-modal-view{
+    inset:2px !important;
+    width:calc(100vw - 4px) !important;
+    max-width:none !important;
+    height:calc(100vh - 4px) !important;
+    max-height:none !important;
+    border-radius:15px !important;
+  }
+
+  .empresa-view.empresa-modal-view .empresa-container{
+    padding:6px !important;
+  }
+
+  .empresa-container{
+    gap:8px !important;
+  }
+
+  .empresa-card{
+    padding:10px !important;
+    border-radius:14px !important;
+  }
+
+  .empresa-hero{
+    padding-bottom:15px !important;
+  }
+
+  .empresa-banner{
+    border-radius:14px 14px 0 0 !important;
+  }
+
+  /* Nombre y slogan */
+  .empresa-title{
+    font-size:27px !important;
+  }
+
+  .empresa-slogan{
+    font-size:15px !important;
+  }
+
+  /* Textos */
+  .empresa-description{
+    font-size:12.5px !important;
+    line-height:1.42 !important;
+  }
+
+  .empresa-section-title{
+    font-size:18px !important;
+    margin-bottom:9px !important;
+  }
+
+  .empresa-item{
+    font-size:11.5px !important;
+    line-height:1.35 !important;
+  }
+
+  .empresa-step strong{
+    font-size:11.5px !important;
+    line-height:1.25 !important;
+  }
+
+  .empresa-step p{
+    font-size:10.5px !important;
+    line-height:1.35 !important;
+    margin-top:5px !important;
+  }
+
+  .empresa-info-list p{
+    font-size:11.5px !important;
+    line-height:1.35 !important;
+    margin-bottom:6px !important;
+  }
+
+  .empresa-testimonio strong{
+    font-size:12px !important;
+  }
+
+  .empresa-testimonio small{
+    font-size:10px !important;
+  }
+
+  .empresa-testimonio p{
+    font-size:10.5px !important;
+    line-height:1.35 !important;
+  }
+
+  .empresa-faq-question{
+    font-size:11.5px !important;
+  }
+
+  .empresa-faq-answer{
+    font-size:10.5px !important;
+    line-height:1.4 !important;
+  }
+
+  .empresa-gallery-description{
+    font-size:10.5px !important;
+    line-height:1.35 !important;
+  }
+
+  /* Tarjetas */
+  .empresa-grid{
+    gap:7px !important;
+  }
+
+  .empresa-item,
+  .empresa-step,
+  .empresa-testimonio,
+  .empresa-stat{
+    padding:10px !important;
+    border-radius:12px !important;
+  }
+
+  /* Cómo comprar: 2 tarjetas por fila */
+  .empresa-grid:has(.empresa-step){
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+  }
+
+  .empresa-step-number{
+    width:28px !important;
+    height:28px !important;
+    margin-bottom:7px !important;
+    font-size:12px !important;
+    line-height:1 !important;
+  }
+
+  /* Estadísticas: 3 en una fila */
+  .empresa-grid:has(.empresa-stat){
+    grid-template-columns:repeat(3, minmax(0,1fr)) !important;
+    gap:6px !important;
+  }
+
+  .empresa-stat{
+    min-width:0 !important;
+    padding:10px 5px !important;
+  }
+
+  .empresa-stat strong{
+    font-size:24px !important;
+    line-height:1 !important;
+  }
+
+  .empresa-stat span{
+    font-size:9px !important;
+    line-height:1.2 !important;
+    margin-top:6px !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  /* Ubicación */
+  .empresa-link{
+    padding:8px 10px !important;
+    font-size:10px !important;
+    line-height:1 !important;
+    border-radius:999px !important;
+    white-space:nowrap !important;
+  }
+
+  .empresa-maps-card{
+    padding:10px !important;
+  }
+
+  /* Contacto: dos botones en una fila */
+  .empresa-card:last-child{
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+    gap:7px !important;
+  }
+
+  .empresa-whatsapp,
+  .btn-volver-catalogo{
+    height:39px !important;
+    min-height:39px !important;
+    padding:0 5px !important;
+    border-radius:9px !important;
+    font-size:9.4px !important;
+    line-height:1.05 !important;
+    white-space:normal !important;
+  }
+
+  .empresa-whatsapp .whatsapp-icon{
+    width:17px !important;
+    height:17px !important;
+    flex:0 0 17px !important;
+  }
+
+  .empresa-whatsapp .whatsapp-icon svg{
+    width:11px !important;
+    height:11px !important;
+  }
+}
+
+/* =========================================================
+   PREVIEW EMPRESA MÁS COMPACTO
+========================================================= */
+
+.empresa-access{
+  margin:18px auto 10px !important;
+}
+
+.empresa-preview{
+  min-height:96px !important;
+  padding:14px 20px !important;
+  grid-template-columns:82px 1.1fr 1.4fr 270px !important;
+  gap:16px !important;
+  border-radius:22px !important;
+}
+
+.empresa-preview-main-icon{
+  width:72px !important;
+  height:72px !important;
+}
+
+.empresa-preview-main-icon svg{
+  width:38px !important;
+  height:38px !important;
+}
+
+.empresa-preview-text h3{
+  font-size:20px !important;
+  margin-bottom:4px !important;
+}
+
+.empresa-preview-text p{
+  font-size:14px !important;
+  margin-bottom:4px !important;
+  line-height:1.15 !important;
+}
+
+.empresa-preview-text span{
+  font-size:12.5px !important;
+  line-height:1.3 !important;
+}
+
+.empresa-preview-features{
+  gap:8px !important;
+  padding-left:16px !important;
+}
+
+.empresa-feature{
+  gap:4px !important;
+}
+
+.empresa-feature svg{
+  width:27px !important;
+  height:27px !important;
+}
+
+.empresa-feature span{
+  font-size:10px !important;
+  line-height:1.05 !important;
+}
+
+.empresa-preview-btn{
+  height:46px !important;
+  border-radius:13px !important;
+  font-size:13px !important;
+  padding:0 16px !important;
+}
+
+/* =========================================================
+   AJUSTE FINAL PREVIEW EMPRESA EN CELULAR
+========================================================= */
+
+@media(max-width:600px){
+
+  .empresa-access{
+    width:100% !important;
+    max-width:100% !important;
+    margin:14px auto 10px !important;
+    padding:0 8px !important;
+    box-sizing:border-box !important;
+  }
+
+  .empresa-preview{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
+
+    display:grid !important;
+    grid-template-columns:62px minmax(0,1fr) !important;
+    grid-template-areas:
+      "icon text"
+      "features features"
+      "button button" !important;
+
+    gap:12px !important;
+    padding:14px !important;
+    border-radius:18px !important;
+
+    text-align:left !important;
+    overflow:hidden !important;
+    box-sizing:border-box !important;
+  }
+
+  .empresa-preview-main-icon{
+    grid-area:icon !important;
+    width:58px !important;
+    height:58px !important;
+    margin:0 !important;
+    align-self:center !important;
+    justify-self:center !important;
+  }
+
+  .empresa-preview-main-icon svg{
+    width:31px !important;
+    height:31px !important;
+  }
+
+  .empresa-preview-text{
+    grid-area:text !important;
+    min-width:0 !important;
+    align-self:center !important;
+    text-align:left !important;
+  }
+
+  .empresa-preview-text h3{
+    margin:0 0 4px !important;
+    font-size:19px !important;
+    line-height:1.05 !important;
+    text-align:left !important;
+  }
+
+  .empresa-preview-text p{
+    margin:0 0 4px !important;
+    font-size:13.5px !important;
+    line-height:1.15 !important;
+    text-align:left !important;
+  }
+
+  .empresa-preview-text span{
+    display:block !important;
+    font-size:11.5px !important;
+    line-height:1.3 !important;
+    text-align:left !important;
+  }
+
+  .empresa-preview-features{
+    grid-area:features !important;
+
+    width:100% !important;
+    min-width:0 !important;
+
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr)) !important;
+    gap:6px !important;
+
+    margin:0 !important;
+    padding:12px 0 0 !important;
+
+    border-left:0 !important;
+    border-top:1px solid rgba(15,23,42,.12) !important;
+
+    box-sizing:border-box !important;
+  }
+
+  .empresa-feature{
+    min-width:0 !important;
+    gap:4px !important;
+    text-align:center !important;
+  }
+
+  .empresa-feature svg{
+    width:23px !important;
+    height:23px !important;
+  }
+
+  .empresa-feature span{
+    font-size:8.5px !important;
+    line-height:1.05 !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  .empresa-preview-btn{
+    grid-area:button !important;
+
+    width:100% !important;
+    max-width:100% !important;
+    height:44px !important;
+
+    margin:0 !important;
+    padding:0 10px !important;
+
+    border-radius:11px !important;
+    font-size:11.5px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:7px !important;
+
+    box-sizing:border-box !important;
+  }
+}
