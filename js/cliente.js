@@ -11,7 +11,7 @@ const CLIENTE = {
   CATALOGO_ID: "disfracesmaysa",
   NOMBRE_CORTO: "MAYSA",
   DESCRIPCION: "Alquiler y Venta de Disfraces",
-  URL_WEB: "https://sagcplatform.pages.dev/",
+  URL_WEB: "https://disfracesmaysa.pages.dev/",
   LOGO: "assets/logo.png",
 
   /* =====================================================
@@ -75,16 +75,16 @@ const CLIENTE = {
   /* =====================================================
      🎨 COLORES
   ===================================================== */
-COLOR_PRINCIPAL: "#D95F87",
-COLOR_PRINCIPAL_OSCURO: "#A93F63",
-COLOR_SECUNDARIO: "#F3D4DE",
-COLOR_SUAVE: "#FFF6F8",
-COLOR_HEADER: "#E99AAF",
-COLOR_PRECIO: "#B63860",
-COLOR_FONDO_PAGINA: "#FCFAFB",
-COLOR_CARRITO: "#C94D76",
-COLOR_BOTON_COMPRAR: "#A93F63",
-COLOR_INSTALAR: "#E99AAF",
+COLOR_PRINCIPAL: "#EE146C",
+COLOR_PRINCIPAL_OSCURO: "#59218D",
+COLOR_SECUNDARIO: "#25B6A1",
+COLOR_SUAVE: "#FFF2F7",
+COLOR_HEADER: "#583DB3",
+COLOR_PRECIO: "#BF1B75",
+COLOR_FONDO_PAGINA: "#FFFAFC",
+COLOR_CARRITO: "#0F8494",
+COLOR_BOTON_COMPRAR: "#EE146C",
+COLOR_INSTALAR: "#583DB3",
   /* =====================================================
      📦 BOTÓN ESPECIAL REUTILIZABLE
      En CONFIG usa BOTON_ESPECIAL: IMPORTACION | MAS_VENDIDO |
