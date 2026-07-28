@@ -7,10 +7,10 @@ const CLIENTE = {
   /* =====================================================
      🏢 NEGOCIO
   ===================================================== */
-  NOMBRE: "SAGC PLATFORM",
-  CATALOGO_ID: "sagcplatform",
-  NOMBRE_CORTO: "SAGC",
-  DESCRIPCION: "Catálogos Digitales, Sistemas de Gestión y Soluciones Empresariales",
+  NOMBRE: "DISFRACES MAYSA",
+  CATALOGO_ID: "disfracesmaysa",
+  NOMBRE_CORTO: "MAYSA",
+  DESCRIPCION: "Alquiler y Venta de Disfraces",
   URL_WEB: "https://sagcplatform.pages.dev/",
   LOGO: "assets/logo.png",
 
