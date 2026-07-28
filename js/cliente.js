@@ -38,7 +38,7 @@ const CLIENTE = {
   // El header conserva siempre su tamaño; si excedes el espacio disponible,
   // la imagen se limita automáticamente dentro de él.
   // Pon 0 para que esa medida se ajuste automáticamente.
-  LOGO_NOMBRE_ANCHO_PC: 360,
+  LOGO_NOMBRE_ANCHO_PC: 300,
   LOGO_NOMBRE_ALTO_PC: 360,
   LOGO_NOMBRE_ANCHO_CELULAR: 190,
   LOGO_NOMBRE_ALTO_CELULAR: 100,
